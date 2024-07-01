@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="utf-8"/>
+   <title>Hexpuzzle</title>
+   <style type="text/css">
+      * {
+         font-family: "Trebuchet MS", "Arial", sans-serif;
+         font-size: x-large;
+         margin: 0;
+         padding: 0;
+      }
+      
+      h1 {
+         padding: 1ex;
+         font-size: xx-large;
+         font-variant: small-caps;
+      }
+
+      div,p {
+         width: 60%;
+         margin: 0 auto;
+      }
+
+      p {
+         padding: 2ex;
+         font-size: larger;
+      }
+
+      h1, div {
+         text-align: center;
+      }
+
+      input, output {
+         vertical-align: middle;
+      }
+
+      canvas {
+         display: block;
+         margin: 0 auto;
+      }
+
+   </style>
+   <script type="text/javascript" src="setup.js"></script>
+   <script type="text/javascript" src="solution.js"></script>
+   
+</head>
+<body onload="main();">
+   <h1 id="title">Puzzles</h1>
+   <div>
+       <input id="setup" name="toggle" type="radio" onchange="set();" checked/> <label for="setup">Setup</label> or <input id="solution" name="toggle" type="radio" onchange="set();" /> <label for="solution">Solution</label><br>
+A: <input id="a" type="range" value="0" min="0" max="8" onchange="set();" />
+B: <input id="b" type="range" value="0" min="0" max="8" onchange="set();" />
+C: <input id="c" type="range" value="0" min="0" max="6" onchange="set();" />
+</div>
+<div>
+<canvas id="scene">No canvas for you.</canvas>
+</div>
+
+<h1>What is this?</h1>
+<p>This is a software version of a physical puzzle (<a href="https://www.smartgames.eu/iqmini/hexpert/">Smartgames IQ mini hexpert</a>) where you have to put 6 different shapes into a hexagonal grid. There are also 3 "stops" that move along a track that is used to set up different puzzles.</p>
+<p>What makes this interesting is that wherever you put the stops, it's always possible to fit the pieces!</p>
+<p>This toy has 2 modes: Setup and Solution. In Setup mode you can see the track and use the <i>ABC</i> sliders to move the stops along the track. In Solution mode it just show the solution, if I've solved it.</p>
+<p>There are 2 special spots where it's not possible to put the stops, those are shown in grey in Setup mode</p>
+<p>In total there are 9 x 9 x 7 = 567 puzzles to solve! Have fun!</p>
+<p>Note: I don't know whether there are any symmetrical setups, or setups with multiple solutions.</p>
+</body>
+</html>
