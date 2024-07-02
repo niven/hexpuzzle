@@ -234,7 +234,7 @@ function set() {
 
 	const url = new URL(location);
 	url.searchParams.set("index", index);
-	history.pushState({}, "", url);
+	history.pushState({}, "", "?index="+index);
 
 	draw();
 }

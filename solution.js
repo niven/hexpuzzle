@@ -24,3 +24,4 @@ solution[239] = [ [false,3,11], [true,0,20],  [false,2,1],  [false,2,8],  [false
 solution[332] = [ [false,3,13], [false,5,21], [true,1,4],   [false,3,19], [false,2,23], [true,3,5]   ];
 solution[452] = [ [false,0,20], [false,0,15], [false,4,19], [false,2,7],  [false,1,18], [true,4,6]   ];
 solution[459] = [ [false,0,2],  [true,5,17],  [false,4,26], [false,3,19], [false,2,5],  [false,3,22] ];
+solution[522] = [ [false,0,20], [true,5,26],  [true,0,15],  [true,4,13],  [false,0,2],  [false,4,17] ];
