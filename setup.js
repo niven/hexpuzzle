@@ -125,6 +125,8 @@ function main() {
 	ctx = document.getElementById("scene").getContext("2d", { alpha: true });
 	ctx.font = "bold 48px Menlo";
 
+	stats();
+
 	if( params.index ) {
 		index = parseInt(params.index);
 		stops = stops_from_index( index );
@@ -139,6 +141,25 @@ function main() {
 	} else {
 		set();
 	}
+
+}
+
+function stats() {
+	let max = 0;
+	let last = 0;
+	let pos = 0;
+	for( const n of Object.keys(solution) ) {
+		if( n-last > max) {
+			max = n-last;
+			pos = n;
+		}; 
+		last = n;
+	}
+	let next = Math.floor( pos - (max/2) );
+	let done = Math.floor(10000*Object.keys(solution).length/567)/100;
+
+	document.querySelector("#next").innerText = next;
+	document.querySelector("#done").innerText = done;
 
 }
 
@@ -232,8 +253,6 @@ function set() {
 	index = 63*stops[0] + 7*stops[1] + stops[2];
 	document.querySelector("#title").innerText = "Puzzle #" + index;
 
-	const url = new URL(location);
-	url.searchParams.set("index", index);
 	history.pushState({}, "", "?index="+index);
 
 	draw();
