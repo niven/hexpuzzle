@@ -19,6 +19,7 @@ solution[34]  = [ [false,0,9],  [false,0,4],  [false,0,20], [false,0,11], [false
 solution[77]  = [ [false,1,18], [false,5,15], [false,0,20], [false,3,19], [false,3,7],  [false,5,21] ];
 solution[109] = [ [false,0,9],  [false,0,17], [true,0,24],  [false,1,1],  [false,0,2],  [true,1,21]  ];
 solution[112] = [ [false,1,22], [false,1,4],  [true,3,8],   [false,0,3],  [false,1,16], [true,5,12]  ];
+solution[141] = [ [false,0,22], [true,3,2],   [false,2,1],  [false,5,20], [false,4,13], [true,4,19]  ];
 solution[170] = [ [false,1,22], [true,1,0],   [true,2,2],   [false,3,23], [false,5,9],  [false,5,24] ];
 solution[228] = [ [false,0,9],  [false,1,5],  [true,1,4],   [false,0,16], [false,4,13], [true,1,21]  ];
 solution[239] = [ [false,3,11], [true,0,20],  [false,2,1],  [false,2,8],  [false,0,21], [false,1,7]  ];
