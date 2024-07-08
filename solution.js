@@ -15,6 +15,7 @@ const HINDEX = 2;
 solution = [];
 //                 triangle      zigzag        hockeystick   boomerang     trapezoid     branch
 solution[0]   = [ [false,1,22], [true,0,21],  [true,3,8],   [false,0,16], [false,3,7],  [true,4,12]  ];
+solution[17]  = [ [false,1,1],  [true,1,20],  [true,2,2], [false,0,4], [false,2,19], [true,1,10]  ];
 solution[34]  = [ [false,0,9],  [false,0,4],  [false,0,20], [false,0,11], [false,0,12], [false,0,6]  ];
 solution[55]  = [ [false,0,13], [false,4,26], [false,2,8],  [false,5,20], [false,5,9],  [false,5,11] ];
 solution[77]  = [ [false,1,18], [false,5,15], [false,0,20], [false,3,19], [false,3,7],  [false,5,21] ];
