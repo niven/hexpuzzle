@@ -32,6 +32,7 @@ solution[213] = [ [false,1,22], [true,4,12],  [false,3,7],  [true,4,3],   [false
 solution[228] = [ [false,0,9],  [false,1,5],  [true,1,4],   [false,0,16], [false,4,13], [true,1,21]  ];
 solution[239] = [ [false,3,11], [true,0,20],  [false,2,1],  [false,2,8],  [false,0,21], [false,1,7]  ];
 solution[262] = [ [false,0,12], [true,1,0],   [false,4,19], [false,2,11], [false,3,26], [false,3,17] ];
+solution[274] = [ [false,0,5],  [false,4,22], [false,2,1],  [false,5,20], [false,4,13], [false,1,12] ];
 solution[286] = [ [false,0,9],  [true,2,5],   [false,0,20], [false,1,1],  [false,4,13], [true,2,6]   ];
 solution[309] = [ [false,0,11], [false,5,20], [false,2,1],  [false,0,13], [false,0,21], [false,0,6]  ];
 solution[332] = [ [false,3,13], [false,5,21], [true,1,4],   [false,3,19], [false,2,23], [true,3,5]   ];
