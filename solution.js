@@ -41,6 +41,7 @@ solution[363] = [ [false,0,9],  [false,1,16], [false,3,7],  [false,5,20], [false
 solution[378] = [ [false,0,0],  [true,5,26],  [true,5,25],  [true,2,6],   [false,1,11], [false,1,7]  ];
 solution[389] = [ [false,0,0],  [false,0,17], [true,0,24],  [false,0,4],  [false,5,6],  [true,1,21]  ]; // pair with 445
 solution[394] = [ [false,0,2],  [true,1,5],   [false,2,1],  [false,1,11], [false,0,21], [true,1,17]  ];
+solution[408] = [ [false,0,13], [false,4,18], [true,0,15],  [false,4,25], [false,3,7],  [false,1,10] ];
 solution[423] = [ [false,1,0],  [true,0,22],  [true,4,6],   [false,4,25], [false,3,21], [true,5,13]  ];
 solution[445] = [ [false,0,2],  [true,4,17],  [false,4,26], [true,4,8],   [false,1,1],  [false,3,22] ]; // pair with 389
 solution[452] = [ [false,0,20], [false,0,15], [false,4,19], [false,2,7],  [false,1,18], [true,4,6]   ];
