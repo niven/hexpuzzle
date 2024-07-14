@@ -18,7 +18,7 @@
       }
 
       div,p,ul {
-         width: 60%;
+         width: 70%;
          margin: 0 auto;
       }
 
@@ -31,7 +31,7 @@
       }
       
       p {
-         padding: 2ex;
+         padding: 1ex;
          font-size: larger;
       }
 
@@ -39,8 +39,9 @@
          text-align: center;
       }
 
-      input, output {
+      input {
          vertical-align: middle;
+         margin-left: 1ex;
       }
 
       canvas {
@@ -57,9 +58,9 @@
    <h1 id="title">Puzzles</h1>
    <div>
        <input id="setup" name="toggle" type="radio" onchange="set();" checked/> <label for="setup">Setup</label> or <input id="solution" name="toggle" type="radio" onchange="set();" /> <label for="solution">Solution</label><br>
-A: <input id="a" type="range" value="0" min="0" max="8" onchange="set();" />
-B: <input id="b" type="range" value="0" min="0" max="8" onchange="set();" />
-C: <input id="c" type="range" value="0" min="0" max="6" onchange="set();" />
+<span style="display: inline-block;"><label for="a">A:</label><input id="a" type="range" value="0" min="0" max="8" onchange="set();"></span>
+<span style="display: inline-block;"><label for="b">B:</label><input id="b" type="range" value="0" min="0" max="8" onchange="set();"></span>
+<span style="display: inline-block;"><label for="c">C:</label><input id="c" type="range" value="0" min="0" max="6" onchange="set();"></span>
 </div>
 <div>
 <canvas id="scene">No canvas for you.</canvas>
