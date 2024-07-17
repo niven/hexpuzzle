@@ -171,9 +171,8 @@ function stats() {
 
 // display alternative solutions. 0 is the main solution
 function alt( i ) {
-	if( i == 0 ) {
-		draw( solution[index] );
-	}
+
+	draw( i == 0 ? solution[index] : alternative_solution[index][ i-1 ] );
 }
 
 function stops_from_index( index ) {
