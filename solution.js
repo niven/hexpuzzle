@@ -12,6 +12,12 @@ const MIRROR = 0;
 const ROTATE = 1;
 const HINDEX = 2;
 
+alternative_solution = []; // some puzzles have more than 1 solution
+
+alternative_solution[25] = 	[ 
+								[ [false,1,4],  [false,4,19], [true,1,5],   [false,2,14], [false,1,18], [true,3,11] ]
+							];
+
 solution = [];
 //                 triangle      zigzag        hockeystick   boomerang     trapezoid     branch
 solution[0]   = [ [false,1,22], [true,0,21],  [true,3,8],   [false,0,16], [false,3,7],  [true,4,12]  ];
@@ -49,6 +55,7 @@ solution[332] = [ [false,3,13], [false,5,21], [true,1,4],   [false,3,19], [false
 solution[333] = [ [false,0,13], [true,1,1],   [false,4,26], [false,0,6],  [false,2,5],  [false,3,22] ];
 solution[347] = [ [false,1,8],  [true,0,15],  [false,3,7],  [true,2,9],   [false,5,20], [false,1,12] ]; // pair with 25
 solution[348] = [ [false,1,21], [true,1,1],   [true,1,15],  [true,2,20],  [false,5,18], [true,4,6]   ];
+solution[354] = [ [false,1,8],  [true,5,24],  [true,0,15],  [true,3,11],  [false,0,1],  [true,1,21]  ];
 solution[363] = [ [false,0,9],  [false,1,16], [false,3,7],  [false,5,20], [false,2,14], [true,5,17]  ];
 solution[368] = [ [false,0,0],  [true,5,24],  [true,0,17],  [false,0,4],  [false,0,7],  [true,1,21]  ]; // pair with 18
 solution[378] = [ [false,0,0],  [true,5,26],  [true,5,25],  [true,2,6],   [false,1,11], [false,1,7]  ];

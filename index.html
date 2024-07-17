@@ -59,6 +59,17 @@
          margin: 0 auto;
       }
 
+      div#solutions a {
+         display: inline-block;
+         margin: 0 2ex;
+         font-size: larger;
+         width: 2ex;
+         color: black;
+         background-color: lightseagreen;
+         border: solid thin darkseagreen;
+         text-decoration: none;
+      }
+
    </style>
    <script type="text/javascript" src="setup.js"></script>
    <script type="text/javascript" src="solution.js"></script>
@@ -72,8 +83,9 @@
 <span style="display: inline-block;"><label for="b">B:</label><input id="b" type="range" value="0" min="0" max="8" onchange="set();"></span>
 <span style="display: inline-block;"><label for="c">C:</label><input id="c" type="range" value="0" min="0" max="6" onchange="set();"></span>
 </div>
-<div>
+<div id="solutions">
 <canvas id="scene">No canvas for you.</canvas>
+<a href="#" id="alt_0" onclick="alt(0);">0</a><a href="#" id="alt_1" onclick="alt(1);">1</a>
 </div>
 
 <h1>What is this?</h1>

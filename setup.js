@@ -137,6 +137,12 @@ function main() {
 		document.querySelector("#solution").checked = true;
 		show_paths = false;
 		show_solution = true;
+		let alts = document.querySelectorAll("div#solutions a");
+		let has_alts = alternative_solution[index] != undefined;
+		alts[0].style.visibility = has_alts ? "visible" : "hidden";
+		for( let i=1; i<alts.length; i++ ) {
+			alts[i].style.visibility = (has_alts && alternative_solution[index][i-1] != undefined) ? "visible" : "hidden";
+		}
 		draw();
 	} else {
 		set();
@@ -161,6 +167,13 @@ function stats() {
 	document.querySelector("#next").innerText = next;
 	document.querySelector("#done").innerText = done;
 
+}
+
+// display alternative solutions. 0 is the main solution
+function alt( i ) {
+	if( i == 0 ) {
+		draw();
+	}
 }
 
 function stops_from_index( index ) {
