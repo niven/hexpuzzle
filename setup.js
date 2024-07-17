@@ -143,7 +143,7 @@ function main() {
 		for( let i=1; i<alts.length; i++ ) {
 			alts[i].style.visibility = (has_alts && alternative_solution[index][i-1] != undefined) ? "visible" : "hidden";
 		}
-		draw();
+		draw( solution[index] );
 	} else {
 		set();
 	}
@@ -172,7 +172,7 @@ function stats() {
 // display alternative solutions. 0 is the main solution
 function alt( i ) {
 	if( i == 0 ) {
-		draw();
+		draw( solution[index] );
 	}
 }
 
@@ -185,7 +185,7 @@ function stops_from_index( index ) {
 	return result;
 }
 
-function draw() {
+function draw( s ) {
 
    ctx.fillStyle = "white";
 	ctx.fillRect( 0, 0, CANVAS_WIDTH, CANVAS_HEIGHT );
@@ -205,14 +205,14 @@ function draw() {
 	disk( hex_to_pixel( B[stops[1]] ), SIZE/2, Color.stop );
 	disk( hex_to_pixel( C[stops[2]] ), SIZE/2, Color.stop );
 
-	if( solution[index] && show_solution ) {
+	if( s && show_solution ) {
 
 		let shapes = [triangle, zigzag, hockeystick, boomerang, trapezoid, branch];
 		let colors = [Color.shape.triangle, Color.shape.zigzag, Color.shape.hockeystick, Color.shape.boomerang, Color.shape.trapezoid, Color.shape.branch];
 		for( let i=0; i<shapes.length; i++ ) {
-			let shape = solution[index][i][MIRROR] ? mirror(shapes[i]) : shapes[i];
-			shape = rotate_cw( shape, solution[index][i][ROTATE] );
-		 	shape = move( shape, solution[index][i][HINDEX] );
+			let shape = s[i][MIRROR] ? mirror(shapes[i]) : shapes[i];
+			shape = rotate_cw( shape, s[i][ROTATE] );
+		 	shape = move( shape, s[i][HINDEX] );
 			shape.forEach( s => disk( hex_to_pixel( s ), DOT_SIZE, colors[i] ) );
 		}
 
@@ -268,7 +268,7 @@ function set() {
 
 	history.pushState({}, "", "?index="+index);
 
-	draw();
+	draw( solution[index] );
 }
 
 function pointy_hex_corner(center, size, i) {
