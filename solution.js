@@ -25,6 +25,7 @@ alternative_solution[474] = [
 solution = [];
 //                 triangle      zigzag        hockeystick   boomerang     trapezoid     branch
 solution[0]   = [ [false,1,22], [true,0,21],  [true,3,8],   [false,0,16], [false,3,7],  [true,4,12]  ];
+solution[8]   = [ [false,0,6],  [true,0,9],   [true,2,2],   [true,4,13],  [false,0,21], [true,4,18]  ];
 solution[17]  = [ [false,1,1],  [true,1,20],  [true,2,2],   [false,0,4],  [false,2,19], [true,1,10]  ];
 solution[18]  = [ [false,0,2],  [false,5,26], [false,4,17], [false,3,19], [false,0,4],  [false,3,22] ]; // pair with 368
 solution[25]  = [ [false,1,4],  [false,4,19], [true,1,5],   [false,2,14], [false,1,18], [true,3,11]  ]; // pair with 347
