@@ -24,6 +24,7 @@ alternative_solution[474] = [
 
 solution = [];
 //                 triangle      zigzag        hockeystick   boomerang     trapezoid     branch
+solution[85]  = [ [false,1,7],  [true,5,17],  [true,2,2],   [false,5,20], [false,5,22], [false,4,16] ];
 solution[0]   = [ [false,1,22], [true,0,21],  [true,3,8],   [false,0,16], [false,3,7],  [true,4,12]  ];
 solution[8]   = [ [false,0,6],  [true,0,9],   [true,2,2],   [true,4,13],  [false,0,21], [true,4,18]  ];
 solution[17]  = [ [false,1,1],  [true,1,20],  [true,2,2],   [false,0,4],  [false,2,19], [true,1,10]  ];
@@ -34,6 +35,7 @@ solution[44]  = [ [false,0,9],  [true,1,6],   [false,3,8],  [true,3,4],   [false
 solution[55]  = [ [false,0,13], [false,4,26], [false,2,8],  [false,5,20], [false,5,9],  [false,5,11] ];
 solution[66]  = [ [false,1,3],  [true,4,26],  [false,5,22], [false,4,17], [false,3,16], [true,5,12]  ];
 solution[77]  = [ [false,1,18], [false,5,15], [false,0,20], [false,3,19], [false,3,7],  [false,5,21] ];
+solution[85]  = [ [false,1,7],  [true,5,17],  [true,2,2],   [false,5,20], [false,5,22], [false,4,16] ];
 solution[93]  = [ [false,1,21], [true,1,6],   [false,2,1],  [true,3,2],   [false,0,10], [false,1,12] ];
 solution[109] = [ [false,0,9],  [false,0,17], [true,0,24],  [false,1,1],  [false,0,2],  [true,1,21]  ];
 solution[112] = [ [false,1,22], [false,1,4],  [true,3,8],   [false,0,3],  [false,1,16], [true,5,12]  ];
