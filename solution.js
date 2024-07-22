@@ -24,7 +24,8 @@ alternative_solution[474] = [
 
 alternative_solution[531] = [
 								[ [false,0,5],  [true,5,19],  [true,3,2],  [true,2,4], [false,1,10], [false,2,18] ],
-								[ [false,0,15], [true,5,19],  [true,3,2],  [true,4,1], [false,2,5],  [false,2,18] ]
+								[ [false,0,15], [true,5,19],  [true,3,2],  [true,4,1], [false,2,5],  [false,2,18] ],
+								[ [false,1,22], [true,5,24],  [true,0,15],  [false,0,1], [false,5,6],  [false,2,8] ]
 							];
 
 solution = [];
