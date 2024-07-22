@@ -15,11 +15,16 @@ const HINDEX = 2;
 alternative_solution = []; // some puzzles have more than 1 solution
 
 alternative_solution[25] = 	[ 
-								[ [false,0,9],  [false,0,4], [true,0,24],   [true,2,17], [false,5,22], [false,0,6] ]
+								[ [false,0,9],  [false,0,4],  [true,0,24], [true,2,17],  [false,5,22], [false,0,6]  ]
 							];
 
 alternative_solution[474] = [ 
-								[ [false,1,21],  [false,4,23], [true,1,4],   [false,3,19], [false,1,10], [true,1,5]   ]
+								[ [false,1,21], [false,4,23], [true,1,4],  [false,3,19], [false,1,10], [true,1,5]   ]
+							];
+
+alternative_solution[531] = [
+								[ [false,0,5],  [true,5,19],  [true,3,2],  [true,2,4], [false,1,10], [false,2,18] ],
+								[ [false,0,15], [true,5,19],  [true,3,2],  [true,4,1], [false,2,5],  [false,2,18] ]
 							];
 
 solution = [];
@@ -80,5 +85,6 @@ solution[482] = [ [false,1,4],  [true,0,16],  [false,4,19],  [true,0,21], [false
 solution[490] = [ [false,5,7],  [false,5,17], [false,5,22], [false,5,21], [false,5,4],  [true,3,11]  ];
 solution[506] = [ [false,0,6],  [true,2,3],   [true,3,11],  [false,5,9],  [false,2,23], [false,5,10] ];
 solution[522] = [ [false,0,20], [true,5,26],  [true,0,15],  [true,4,13],  [false,0,2],  [false,4,17] ];
+solution[531] = [ [false,1,0],  [true,5,19],  [true,3,2],   [false,3,11], [false,1,10], [false,2,18] ];
 solution[541] = [ [false,1,21], [true,5,26],  [false,3,8],  [true,4,13],  [false,4,15], [false,3,7]  ];
 solution[560] = [ [false,1,3],  [false,5,15], [false,0,20], [false,1,2],  [false,2,12], [false,2,13] ];
