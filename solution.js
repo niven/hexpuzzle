@@ -80,3 +80,4 @@ solution[482] = [ [false,1,4],  [true,0,16],  [false,4,19],  [true,0,21], [false
 solution[490] = [ [false,5,7],  [false,5,17], [false,5,22], [false,5,21], [false,5,4],  [true,3,11]  ];
 solution[506] = [ [false,0,6],  [true,2,3],   [true,3,11],  [false,5,9],  [false,2,23], [false,5,10] ];
 solution[522] = [ [false,0,20], [true,5,26],  [true,0,15],  [true,4,13],  [false,0,2],  [false,4,17] ];
+solution[560] = [ [false,1,3],  [false,5,15], [false,0,20], [false,1,2],  [false,2,12], [false,2,13] ];
