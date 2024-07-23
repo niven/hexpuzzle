@@ -216,7 +216,7 @@ function draw( s ) {
 		let shapes = [triangle, zigzag, hockeystick, boomerang, trapezoid, branch];
 		let colors = [Color.shape.triangle, Color.shape.zigzag, Color.shape.hockeystick, Color.shape.boomerang, Color.shape.trapezoid, Color.shape.branch];
 		for( let i=0; i<shapes.length; i++ ) {
-			let shape = s[i][MIRROR] ? mirror(shapes[i]) : shapes[i];
+			let shape = s[i].length == 3 ? mirror(shapes[i]) : shapes[i];
 			shape = rotate_cw( shape, s[i][ROTATE] );
 		 	shape = move( shape, s[i][HINDEX] );
 			shape.forEach( s => disk( hex_to_pixel( s ), DOT_SIZE, colors[i] ) );
