@@ -150,9 +150,9 @@ function alternatives_display() {
 
 	let alts = document.querySelectorAll("div#solutions a");
 	let has_alts = alternative_solution[index] != undefined;
-	alts[0].style.visibility = has_alts ? "visible" : "hidden";
+	alts[0].style.display = has_alts ? "inline-block" : "none";
 	for( let i=1; i<alts.length; i++ ) {
-		alts[i].style.visibility = (has_alts && alternative_solution[index][i-1] != undefined) ? "visible" : "hidden";
+		alts[i].style.display = (has_alts && alternative_solution[index][i-1] != undefined) ? "inline-block" : "none";
 	}
 
 }
