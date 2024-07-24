@@ -101,6 +101,7 @@ const hockeystick = [ H(0,0), H(0,1,-1), H(1,1,-2), H(2,1,-3) ];
 const boomerang = [ H(0,0), H(-1, 1, 0), H(-1, 2, -1) ];
 const trapezoid = [ H(0,0), H(-1,1,0), H(1,0,-1), H(0,1,-1), H(1,1,-2)];
 const branch = [ H(0,0), H(1,0,-1), H(2,0,-2), H(2,-1,-1), H(2,1,-3) ];
+const shapes = [triangle, zigzag, hockeystick, boomerang, trapezoid, branch];
 
 // basis vectors
 const dq = H( Math.sqrt(3), Math.sqrt(3)/2 );
@@ -213,7 +214,6 @@ function draw( s ) {
 
 	if( s && show_solution ) {
 
-		let shapes = [triangle, zigzag, hockeystick, boomerang, trapezoid, branch];
 		let colors = [Color.shape.triangle, Color.shape.zigzag, Color.shape.hockeystick, Color.shape.boomerang, Color.shape.trapezoid, Color.shape.branch];
 		for( let i=0; i<shapes.length; i++ ) {
 			let shape = s[i].length == 3 ? mirror(shapes[i]) : shapes[i];
