@@ -139,6 +139,7 @@ function main() {
 		show_paths = false;
 		show_solution = true;
 		draw( solution[index] );
+		document.querySelector("title").innerText = "Hexuzzle #" + index;
 	} else {
 		set();
 	}
@@ -270,7 +271,8 @@ function set() {
 
 	stops = ["a","b", "c"].map( s => parseInt(document.querySelector("#"+s).value) );
 	index = 63*stops[0] + 7*stops[1] + stops[2];
-	document.querySelector("#title").innerText = "Puzzle #" + index;
+
+	document.querySelector("title").innerText = "Hexuzzle #" + index;
 
 	history.pushState({}, "", "?index="+index);
 
