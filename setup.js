@@ -272,6 +272,9 @@ function set() {
 	stops = ["a","b", "c"].map( s => parseInt(document.querySelector("#"+s).value) );
 	index = 63*stops[0] + 7*stops[1] + stops[2];
 
+	// Title on the page
+	document.querySelector("#title").innerText = "Puzzle #" + index;
+	// Document title
 	document.querySelector("title").innerText = "Hexuzzle #" + index;
 
 	history.pushState({}, "", "?index="+index);
