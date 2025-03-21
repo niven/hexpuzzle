@@ -77,6 +77,7 @@ solution = [];
 //    24 25 26 
 
 //               triangle zigzag  hockeystick boomerang trapezoid branch
+solution[0]   = [ [1,22], [0,21,m], [3,8,m],  [0,16], [3,7],  [4,12,m] ];
 solution[4]   = [ [0,9],  [0,17],   [3,8],    [0,16], [3,12], [1,21,m] ];
 solution[8]   = [ [0,6],  [0,9,m],  [2,2,m],  [3,23], [0,21], [4,18,m] ];
 solution[12]  = [ [1,11], [0,24],   [5,21,m], [4,18], [1,3],  [0,4]    ];
